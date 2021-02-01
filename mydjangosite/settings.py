@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -57,7 +58,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         # 'DIRS': [],
         # 'DIRS': [os.path.join(BASE_DIR, 'mydjangosite/templates')], #注意以下配置BASE_DIR是manage.py文件的所在路径.
-        'DIRS': [BASE_DIR/"mydjangosite/templates", ],
+        #'DIRS': [BASE_DIR/"mydjangosite/templates", ], #使用myapp 还没有vue使用
+        'DIRS': ['myvueproject/dist'],  #使用vue添加
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,3 +127,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# 添加
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "myvueproject/dist/static"),
+]
