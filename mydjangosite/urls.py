@@ -13,4 +13,5 @@ urlpatterns = [
     path('testdb/', testdb.testdb),
     # re_path(r'^hello$',views.hello),
     path('index/', TemplateView.as_view(template_name="index.html")),  #使用vue时 添加
+    path('user/', include('user.urls')),  #使用user应用时 添加，这个是主路由，指向子路由文件user.urls
 ]

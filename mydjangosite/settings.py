@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myapp',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -60,6 +61,7 @@ TEMPLATES = [
         # 'DIRS': [os.path.join(BASE_DIR, 'mydjangosite/templates')], #注意以下配置BASE_DIR是manage.py文件的所在路径.
         #'DIRS': [BASE_DIR/"mydjangosite/templates", ], #使用myapp 还没有vue使用
         'DIRS': ['myvueproject/dist'],  #使用vue添加
+        #'DIRS': ['BASE_DIR/"user/templates/user",'],  #使用vue添加
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

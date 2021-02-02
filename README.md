@@ -23,6 +23,9 @@ Terminal执行  pip install -r requirements.txt
 
 #django项目如何运行
 1、进入根目录mydjangosite
+【第一次运行项目如果有改数据库需要配置数据库、初始化数据表
+python manage.py  makemigrations   
+ python manage.py migrate】
 2、python manage.py runserver 127.0.0.1:8000
 3、启动后浏览器输入对应地址 如：http://127.0.0.1:8000/runoob/  即mydjangosite\mydjangosite\urls.py配置的路径
 
@@ -31,6 +34,7 @@ Terminal执行  pip install -r requirements.txt
 2.npm install
 3.npm run build
 4.打开链接 http://localhost:8080
+
 
 #git常见问题
 一、如果git pull时和本地文件有冲突如何解决

@@ -7,8 +7,8 @@ def hello(request):
 # def runoob(request):
 #     context = {}
 #     context['hello1'] = 'Hello World 这个是具体的文案!'
-#     return render(request, 'runoob.html', context)
+#     return render(request, 'register.html', context)
 
 def runoob(request):
     views_name = "菜鸟教程这个是输出的"
-    return render(request, "runoob.html", {"name": views_name})
+    return render(request, "register.html", {"name": views_name})
