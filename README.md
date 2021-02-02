@@ -14,15 +14,23 @@
       |---tests.py 
       |---urls.py # myapp的应用路由系统 ===> url与视图的对应关系 
       |---views.py # myapp的应用 
+  |---myvueproject # vue项目，与Django项目mydjangosite整合一起
+  |---onlyvueproject # 单纯的vue项目
   |---manage.py # 管理文件
 
 #环境安装 #在线安装
 Terminal执行  pip install -r requirements.txt 
 
-#项目如何运行
+#django项目如何运行
 1、进入根目录mydjangosite
 2、python manage.py runserver 127.0.0.1:8000
 3、启动后浏览器输入对应地址 如：http://127.0.0.1:8000/runoob/  即mydjangosite\mydjangosite\urls.py配置的路径
+
+#vue项目如何运行
+1.进入vue项目目录mydjangosite\myvueproject
+2.npm install
+3.npm run build
+4.打开链接 http://localhost:8080
 
 #git常见问题
 一、如果git pull时和本地文件有冲突如何解决
