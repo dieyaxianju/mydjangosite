@@ -27,7 +27,7 @@ export default {
   name: 'HelloWorld',
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App',
+      msg: 'Welcome to Your Vue.js App cldjango',
       options: [{
         value: '选项1',
         label: '黄金糕'
