@@ -1,14 +1,17 @@
+
+<!-- 展示模板 -->
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+<div id="app">
+  <p>{{ message }}</p>
+</div>
 </template>
 
-<script>
-export default {
-  name: 'App'
-}
+<script type="text/javascript">
+export default{
+ data(){
+   return{ message:'我的页面'}
+ },
+  }
 </script>
 <!-- 样式代码 -->
 <style>
