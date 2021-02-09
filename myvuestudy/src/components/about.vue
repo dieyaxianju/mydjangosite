@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="about">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -85,10 +85,10 @@
 
 <script>
 export default {
-  name: 'Hello',
+  name: 'about',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App  Hello.vue单独页面 菜鸟教程开始'
+      msg: 'Welcome to Your Vue.js App  蔡露学习加路由组件 这个是about组件'
     }
   }
 }

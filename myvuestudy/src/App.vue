@@ -4,19 +4,16 @@
   <div id="app">
     <img src="./assets/logo.png">
     <h1>{{msg}}</h1>
-    <firstcomponent></firstcomponent>
-    <secondcomponent></secondcomponent>
+    <router-view></router-view>
    </div>
 </template>
 
 <script>
-import firstcomponent from './components/firstcomponent.vue'
-import secondcomponent from './components/secondcomponent.vue'
+
 export default{
  data(){
-   return { msg:'我的页面'}
- },
- components: { firstcomponent,secondcomponent }
+   return { msg:'我的页面，这个是app.vue页面，这个是公共部分'}
+ }
 }
 </script>
 <!-- 样式代码 -->
